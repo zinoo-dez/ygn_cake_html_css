@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: #141e27;
+    text-decoration: none;
+    font-family: 'Inter', 'Public Sans', 'Savate';
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+    background: #faf1c3;
+    background: linear-gradient(90deg, rgba(250, 241, 195, 0.986) 10%, rgba(247, 235, 176, 0.336) 45%), url("../photos/banner.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    padding-top: 20px;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    height: 80px;
+    background: #f0d9a7c7;
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 999;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.banner-content {
+    width: 50%;
+    min-height: 75vh;
+    border: none;
+}
