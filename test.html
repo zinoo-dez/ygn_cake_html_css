@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .app {
+            height: 300px;
+            background: red;
+            display: flex;
+            gap: 10px;
+            /* flex-wrap: wrap; */
+        }
+
+        .a,
+        .b {
+            flex: 1;
+            background: pink;
+        }
+
+        @media screen and (max-width: 768px) {
+            .app {
+                flex-direction: column;
+            }
+
+
+            @media screen and (max-width: 600px) {
+                .app {
+                    flex-direction: column-reverse;
+                }
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="a">a</div>
+        <div class="b">b</div>
+    </div>
+</body>
+
+</html>

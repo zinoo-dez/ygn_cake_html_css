@@ -1,0 +1,39 @@
+@media (max-width: 600px) {
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-items {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background: #fceac3ee;
+        padding: 30px;
+        flex-direction: column;
+        border-radius: 30px;
+        transition: 0.5s;
+        /* transform: translateX(-120%); */
+        transform: scale(0);
+        /* transform-origin: right top; */
+        /* display: none; */
+    }
+
+    .show {
+        /* transform: translate(0); */
+        transform: scale(1);
+        /* display: block; */
+    }
+
+    .banner-content {
+        width: 100%;
+        background: #f7cb8a88;
+        padding-left: 40px;
+    }
+}

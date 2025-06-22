@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <style>
+        body {
+            padding: 20px;
+        }
+
+        .app {
+            background: pink;
+            padding: 20px;
+        }
+
+        /* mobile-first approved(small to large) */
+
+        @media screen and (min-width: 576px) {
+            body {
+                padding: 30px;
+            }
+
+            .app {
+                background: lightblue;
+                padding: 30px;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                padding: 40px;
+            }
+
+            .app {
+                background: lightgreen;
+                padding: 40px;
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            body {
+                padding: 50px;
+            }
+
+            .app {
+                background: lightcoral;
+                padding: 50px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            body {
+                padding: 60px;
+            }
+
+            .app {
+                background: lightgoldenrodyellow;
+                padding: 60px;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In reprehenderit minus soluta illo eum esse eos
+            quasi debitis voluptatum numquam deleniti incidunt explicabo, iste, alias sapiente repellat pariatur sequi
+            laudantium officia distinctio reiciendis dolorem. Quibusdam doloremque eaque aliquid exercitationem quae
+            obcaecati dolor, illum consequatur maiores veniam delectus soluta repellendus velit iste nobis ea qui
+            reiciendis! Facere, voluptatum! Voluptatum repellat, at earum laudantium suscipit a! Ad recusandae quis
+            nesciunt reprehenderit eum aperiam facilis et reiciendis, eius explicabo hic quaerat a mollitia cumque
+            adipisci laborum aliquam dicta neque aliquid consequuntur veritatis dolore suscipit saepe tenetur? Ipsa
+            vitae sed labore veniam dignissimos dolor?</p>
+    </div>
+</body>
+
+</html>

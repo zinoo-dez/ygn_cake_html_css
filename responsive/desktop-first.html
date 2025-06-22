@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desktop first</title>
+    <style>
+        body {
+            padding: 50px;
+        }
+
+        .app {
+            background: lightcoral;
+            padding: 50px;
+        }
+
+        /* desktop-first approved(large to small) */
+        @media screen and (max-width: 1200px) {
+            body {
+                padding: 40px;
+            }
+
+            .app {
+                background: lightgreen;
+                padding: 40px;
+            }
+        }
+
+        @media screen and (max-width: 998px) {
+            body {
+                padding: 30px;
+            }
+
+            .app {
+                background: lightblue;
+                padding: 30px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+
+            .app {
+                background: pink;
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            body {
+                padding: 10px;
+            }
+
+            .app {
+                background: lightgray;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 5px;
+            }
+
+            .app {
+                background: lightyellow;
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui illum mollitia iure fugit hic eligendi numquam
+            perferendis sint blanditiis temporibus, et ipsa recusandae ut, dolores doloremque. Alias magnam
+            exercitationem modi aspernatur accusamus sequi debitis harum magni excepturi. Error necessitatibus nihil
+            dicta aut unde atque aperiam sunt ipsa dolore. Ex ipsam hic suscipit cumque, aspernatur perspiciatis
+            deserunt quo. Corporis voluptate dolore praesentium ad odit placeat. Itaque minus porro quo dignissimos, ad
+            dolorem dolore explicabo sint? Minus distinctio maxime enim maiores eveniet? Earum dolor numquam illo, quia
+            ea saepe veritatis sequi pariatur atque totam error sapiente sed neque, doloremque consequuntur, obcaecati
+            ullam!</p>
+    </div>
+</body>
+
+</html>
