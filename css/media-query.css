@@ -58,4 +58,15 @@
         gap: 20px;
     }
 
+    /* testimonials section */
+    .testimonials-section {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* contact section */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
 }

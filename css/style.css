@@ -180,3 +180,24 @@ section {
     height: 100%;
     object-fit: cover;
 }
+
+/* contact section */
+#contact {
+    background: #eff;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 50px;
+}
+
+.contact-section {
+    box-shadow: 2px 2px 4px #d4d1d1;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
