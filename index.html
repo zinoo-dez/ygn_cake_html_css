@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YGN'Cake</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@hellouxpavel/cssanimation@latest/dist/cssanimation-utility.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
       rel="shortcut icon"
       href="./photos/icons/logo.svg"
       type="image/x-icon"
@@ -52,7 +65,9 @@
           <img src="./photos/cake-2.svg" width="20" alt="" />
           <img src="./photos/cake-3.svg" width="20" alt="" />
         </div>
-        <h1>Welcome To YGN'Cafe</h1>
+        <h1 class="cssanimation ca__fx-bounceInLeft ca__u-loopForever">
+          Welcome To YGN'Cafe
+        </h1>
         <p>
           Your favorite place for delicious cakes and coffee. <br />
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
@@ -78,11 +93,15 @@
       </div>
     </header>
     <main>
-      <section id="about">
-        <h2 class="title">About Us</h2>
+      <section id="about" data-aos="zoom-out-right" data-aos-duration="3000">
+        <h2 class="title cssanimation ca__fx-bounceInLeft">About Us</h2>
         <div class="about-section">
           <div class="about-content">
-            <h3>Our Story</h3>
+            <h3
+              class="animate__animated animate__zoomInUp animate__delay-5s animate__slower"
+            >
+              Our Story
+            </h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Excepturi, sed corrupti quia suscipit dolorum iste error ipsa
@@ -92,14 +111,24 @@
             <a href="#" class="btn btn-secondary">Read More</a>
           </div>
           <div class="about-image">
-            <img src="./photos/about.svg" width="350" alt="" />
+            <img
+              src="./photos/about.svg"
+              width="350"
+              class="animate__animated animate__zoomInUp animate__delay-4s animate__slower"
+              alt=""
+            />
           </div>
         </div>
       </section>
       <section id="menu">
         <h2 class="title">Menu</h2>
         <div class="menu-section">
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="3000"
+          >
             <img src="./photos/c-1.svg" width="150" alt="" />
           </div>
           <div class="menu-content flex-2">
@@ -110,7 +139,12 @@
               laudantium explicabo!
             </p>
           </div>
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
+          >
             <img src="./photos/c-2.svg" width="150" alt="" />
           </div>
         </div>
@@ -126,7 +160,12 @@
               laudantium explicabo!
             </p>
           </div>
-          <div class="menu-image flex-1">
+          <div
+            class="menu-image flex-1"
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="4000"
+          >
             <img src="./photos/c-4.svg" width="150" alt="" />
           </div>
         </div>
@@ -208,5 +247,9 @@
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

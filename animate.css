@@ -1,0 +1,55 @@
+.box {
+     width: 100px;
+     height: 100px;
+     background: red;
+     animation: move 5s 2s infinite forwards linear;
+     position: absolute;
+}
+
+@keyframes move {
+     0% {
+          top: 0;
+          left: 0;
+     }
+
+     25% {
+          top: 0;
+          left: 500px;
+          background: green;
+     }
+
+     50% {
+          top: 400px;
+          left: 500px;
+          background: blue;
+          border-radius: 50%;
+          transform: scale(2);
+     }
+
+     75% {
+          top: 400px;
+          left: 0;
+          background: yellow;
+     }
+
+     100% {
+          top: 0px;
+          left: 0px;
+     }
+}
+
+.app {
+     width: 300px;
+     padding: 20px;
+     background: pink;
+     transform: translate(200px, 200px);
+     opacity: 0;
+     animation: test 3s 2 forwards ease-in-out;
+}
+
+@keyframes test {
+     100% {
+          transform: translateX(0);
+          opacity: 1;
+     }
+}
